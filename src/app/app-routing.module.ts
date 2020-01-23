@@ -4,7 +4,8 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 const routes: Routes = [
   {
     path: 'settings',
-    loadChildren: './settings/settings.module#SettingsModule'
+    loadChildren: './settings/settings.module#SettingsModule',
+    data: {animation: 'SettingsPage'}
   },
   {
     path: 'profile',
@@ -12,7 +13,8 @@ const routes: Routes = [
   },
   {
     path: 'editor',
-    loadChildren: './editor/editor.module#EditorModule'
+    loadChildren: './editor/editor.module#EditorModule',
+    data: {animation: 'EditorPage'}
   },
   {
     path: 'article',
