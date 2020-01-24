@@ -2,11 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { ArticleListConfig, TagsService, UserService } from '../core';
+import { slideInAnimation } from '../slideInAnimation';
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  animations: [
+    slideInAnimation
+    // animation triggers go here
+  ]
 })
 export class HomeComponent implements OnInit {
   constructor(
